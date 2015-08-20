@@ -1,0 +1,26 @@
+{
+  "name": "vr-complex",
+  "version": "1.0.0",
+  "description": "Vietrois-Rips complex builder",
+  "main": "./lib/VR.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "vr",
+    "vietrois-rips",
+    "complex",
+    "topology"
+  ],
+  "author": "Lukasz Krawczyk <contact@lukaszkrawczyk.eu> (http://lukaszkrawczyk.eu)",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "should": "^7.0.2"
+  }
+}

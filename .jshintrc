@@ -1,0 +1,10 @@
+{
+  "expr": true,
+  "globals": {
+    "moment": true,
+    "$": true,
+    "JST": true,
+    "document": true
+  },
+  "mocha": true
+}
