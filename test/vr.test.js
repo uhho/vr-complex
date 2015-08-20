@@ -1,6 +1,6 @@
-var VR = require('../VR.js');
+var VR = require('../lib/VR.js');
 
-describe('Cech', function() {
+describe('VR', function() {
   describe('complex', function() {
     it('should create correct VR complex', function(done) {
       var data = [
@@ -16,7 +16,7 @@ describe('Cech', function() {
       done();
     });
   });
-  
+
   describe('bettiNumbers', function() {
     it('should compute correct betti numbers', function(done) {
       var data = [
@@ -27,11 +27,11 @@ describe('Cech', function() {
       ];
       var vr = new VR();
       var S = vr.complex(data, 2, 3);
-      var betti = vr.homology(S);
+      var betti = vr.homology(2);
       betti.should.eql([1, 0]);
       done();
     });
-    
+
     it('should compute correct betti numbers', function(done) {
       var data = [
         [6.06, 2.01], [5.10, 0.10], [4.09, 2.02],
@@ -42,23 +42,19 @@ describe('Cech', function() {
       ];
       var vr = new VR();
       var S = vr.complex(data, 2, 3);
-      var betti = vr.homology(S);
+      var betti = vr.homology(2);
       betti.should.eql([1, 1]);
       done();
     });
-    
+
   });
-  
-  describe('boundaryMatrix', function() {
-    it('should create boundary matrix');
-  });
-  
-   describe('hatOperator', function() {
+
+  describe('hatOperator', function() {
     it('should remove element from vector', function(done) {
-      vr.hatOperator([1, 2, 3, 4, 5], 2).should.eql([1, 2, 4, 5]);
+      var vr = new VR();
+      vr.hatOperator([1, 2, 3, 4, 5], 2).should.eql([1, [1, 2, 4, 5]]);
       done();
     });
   });
 
-  
 });
