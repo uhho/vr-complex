@@ -1,0 +1,34 @@
+{
+  "name": "vr-complex",
+  "version": "1.0.0",
+  "description": "Vietrois-Rips complex builder",
+  "main": "./lib/VR.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LukaszKrawczyk/vr-complex.git"
+  },
+  "keywords": [
+    "cech",
+    "complex",
+    "topology"
+  ],
+  "authors": {
+    "name": "Lukasz Krawczyk"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LukaszKrawczyk/vr-complex/issues"
+  },
+  "homepage": "https://github.com/LukaszKrawczyk/vr-complex",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
