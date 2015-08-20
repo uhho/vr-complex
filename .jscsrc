@@ -1,0 +1,9 @@
+{
+  "preset": "google",
+  "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
+  "disallowSpacesInsideObjectBrackets": "nested",
+  "jsDoc": {
+    "checkAnnotations": "jsdoc3",
+    "checkTypes": "strictNativeCase"
+  }
+}
