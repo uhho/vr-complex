@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Topological Data Analysis</title>
+  <style>
+    body {
+      background-color: #eee;
+    }
+    #canvas {
+      border: 1px #ddd solid;
+      background-color: #fff;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css"/>
+</head>
+<body>
+  <div class="container-fluid">
+    <h1>Topological data analysis</h1>
+    <div class="row">
+      <div class="col-xs-6">
+        <canvas id="canvas" width="600" height="400"></canvas><br>
+        <strong id="fps"></strong>
+      </div>
+      <div class="col-xs-6">
+        <h1>Vietrois-Rips Complex</h1>
+        <label for="radius">Radius: <strong id="radiusLabel">150</strong></label>
+        <input type="range" id="radius" name="radius" min="10" value="150" max="300" step="1"/>
+        <h4>Vertices: <span id="vertices"></span></h4>
+        <h4>Edges: <span id="edges"></span></h4>
+        <h4>Triangles: <span id="triangles"></span></h4>
+        <h4>Tetrahedrons: <span id="tetrahedrons"></span></h4>
+        <hr>
+        <h1>Homology group</h1>
+        <h3>β<sub>0</sub>: <span id="betti0"></span></h3>
+        <h3>β<sub>1</sub>: <span id="betti1"></span></h3>
+        <button id="shadow" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+          Shadow
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="../lib/VR.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
