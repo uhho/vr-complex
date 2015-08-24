@@ -1,6 +1,6 @@
 {
   "name": "vr-complex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vietrois-Rips complex builder",
   "main": "./lib/VR.js",
   "directories": {
